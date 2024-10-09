@@ -6,7 +6,7 @@ def test_get_posts():
     response = requests.get(url)
 
     # Verifica se o status code é 200
-    assert response.status_code == 2001
+    assert response.status_code == 200
     # Verifica se a resposta é um JSON
     data = response.json()
     assert isinstance(data, list)

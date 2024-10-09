@@ -7,4 +7,4 @@ def test_delete_post():
     response = requests.delete(url, verify=False)
 
     # Valida o status code da resposta
-    assert response.status_code == 400
+    assert response.status_code == 200

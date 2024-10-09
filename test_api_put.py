@@ -13,7 +13,7 @@ def test_update_post():
     response = requests.put(url, json=payload, verify=False)
 
     # Valida o status code da resposta
-    assert response.status_code == 301
+    assert response.status_code == 200
 
     # Valida se o título e o corpo no retorno são iguais aos enviados
     response_json = response.json()
